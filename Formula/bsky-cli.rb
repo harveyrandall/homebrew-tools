@@ -1,26 +1,26 @@
 class BskyCli < Formula
   desc "A command-line client for Bluesky"
   homepage "https://github.com/harveyrandall/bsky-cli"
-  version "1.3.0"
+  version "1.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/harveyrandall/bsky-cli/releases/download/v#{version}/bsky-macos-arm64.tar.gz"
-      sha256 "12d59e7f1debd6378fcfd8ac7344005af28732d3252e0a1002898b19c05994b4"
+      sha256 "f90c6af2ca045ec9159f7bef5f20a143d6863cb298f86834977b8b4c43cf6446"
     else
       url "https://github.com/harveyrandall/bsky-cli/releases/download/v#{version}/bsky-macos-x64.tar.gz"
-      sha256 "030b03de965068169b200607f74e622875c3b039f959a78a4db1ab1f8188d314"
+      sha256 "0f8a82a289cf77b2b86242f88f938b27bdf71163e26071c48c21243a2f900ec8"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/harveyrandall/bsky-cli/releases/download/v#{version}/bsky-linux-arm64.tar.gz"
-      sha256 "c86753369ab80d706e86d84515183347f6a12ded41e54a17d23c45905f241515"
+      sha256 "b17b7525c63637801691bb50d1a812d7c1b6293e918548fcf4ed8998010baa04"
     else
       url "https://github.com/harveyrandall/bsky-cli/releases/download/v#{version}/bsky-linux-x64.tar.gz"
-      sha256 "cabf4a2cb6d1f6b9b637b4715a266b4ac78fcb86242248e0940429e9c5f24bfa"
+      sha256 "f68d59be9893fd63d0838116c76a327e1fbcacb65ad7f97a8365779d746f56da"
     end
   end
 
